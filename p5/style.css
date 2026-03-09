@@ -1,0 +1,16 @@
+/*elemen selector */
+/* referensi web colorhunt.co */
+body {
+    background-color: #cbfd40;
+    color: white;
+}
+.txt-center {
+    text-align: center;
+}
+
+.txt-center {text-align: center;}
+.bg-warning { background-color: yellow; border-radius: 20px 0px 20px 0px;}
+.txt-black { color: black;}
+.p-1 { padding: 50px; } /* memberi jarak sisi dalam border */
+.m-1 { margin: 20px; } /* memberi jarak sisi luar border*/
+

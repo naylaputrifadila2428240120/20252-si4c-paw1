@@ -1,5 +1,6 @@
-let npm = document. getElementById("npm");
-let nama = document. getAnimations("nama");
+let npm = document.getElementById("npm");
+let nama = document.getElementById("nama");
+let foto = document.getElementById("foto");
 
 function simpan(){
     console.log(npm.value)
@@ -21,29 +22,39 @@ function simpan(){
     //simpan value npm dan nama ke dalam object data
     data.push({
         npm: npm.value,
-        nama: nama.value
+        nama: nama.value,
+        foto: foto.value,
     })
     console.log(data)
 
     //simpan data terbaru ke dalam local storage
     //konversi dari object menjadi string
     localStorage.setItem("mahasiswa", JSON.stringify(data))
-    
+
+    //panggil tampil
+    tampil()
+
 }
 
-function tampil() {
-    // panggil dulu local storage
-    let hasil = JSON.parse(localStorage.getItem)("mahasiswa")
+function tampil(){
+    //panggil dulu local storage
+    let hasil = JSON.parse(localStorage.getItem("mahasiswa"))
 
     //clear element ul id=list-mhs
     document.getElementById("list-mhs").innerHTML=""
-    
 
-    // lakukan perulangan (forEach)
-    hasil.forEach(Element => {
-        console.log(Element)
-        document.getElementById("list-mhs")
-        innerHTML += '<li>${element.npm} ${element.nama}</li>'
+    //lakukan perulangan (forEach)
+    hasil.forEach(element => {
+        // console.log(element)
+        document.getElementById("list-mhs").innerHTML += `<div class="col-lg-4 col-md-6">
+        <h4
+        class="text-primary">${element.nama}</h4>
+        <h6 class="text-danger">${element.npm}</h6>
+        <img class="img-fluid" src=${element.foto} alt="dak ad" />
+        </div>`
+        
     });
-
 }
+
+//jalankan function tampil()
+tampil()

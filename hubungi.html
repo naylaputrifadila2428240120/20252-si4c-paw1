@@ -1,59 +1,63 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" 
-    content="width=device-width,
-    initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hubungi</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- <! tag heading: h1 sd h6  -->
-    <h1>MDP IT Superstore</h1>
-    <p>Semua Yang dicari pasti ada</p>
-    <!-- ini komentar, komentar tidak di tampilkan pada browser -->
-    <!-- hyperlink -->
-     <a href="index.html">Beranda</a>
-     <a href="tentanghtml">Tentang</a>
-     <a href="index.html">Hubungi Kami</a>
 
-     <hr>
-     <h1>Hubungi</h1>
-     <h1>Hubungi Kami</h1>
-    <!-- Form -->
-     <form action="submit.html" method="post"></form>
-     NPM <br>
-     <input type="text" name="npm" id="npm"> <br>
-     Nama <br>
-     <input type="tel" name="nama" id="nama"> <br>
-     Email <br>
-     <input type="text" name="email" id="email">
-     <br>
-     Tanggal Lahir <br>
-     <input type="date" name="tglLahir" id="tglLahir"> <br>
-     kota Lahir <br>
-     <select name="kotaLahir" id="kotaLahir">
-        <option value="JKT">Jakarta</option>
-        <option value="PLB">Palembang</option>
-        <option value="BTM">Batam</option>
-        </select> <br>
-        Jenis kelamin <br>
-        <input type="radio" name="jk" value="L" checked>
-         Laki - laki <br>
-        <input type="radio" name="jk" value="P">
-        perempuan <br>
-        Mengetahui UMPD dari mana <br>
-        <input type="checkbox" name="cb1" value="K">
-        Keluarga <br>
-        <input type="checkbox" name="cb2" value="S">
-        Sosial Media <br>
-        Foto <br>
-        <input type="file" name="Foto" id=""> <br>
-        <button type="submit">Simpan</button>
-        <button type="reset">reset</button>
+<h1 class="txt-center">MDP IT Superstore</h1>
 
-     
-    <!-- image -->
-     <img src="images/image.png" alt="Gambar benner" width="100">
-    
+<div class="bg-warning txt-black txt-center p-1 m-1">
+    Semua yang dicari ada disini
+</div>
+
+<div class="txt-center">
+    <a href="index.html">Beranda</a> |
+    <a href="tentang.html">Tentang</a> |
+    <a href="hubungi.html">Hubungi Kami</a> |
+    <a href="produk.html">Produk</a>
+</div>
+
+<hr>
+
+<h2>Hubungi Kami</h2>
+
+<form>
+    <label>NPM</label><br>
+    <input type="text"><br><br>
+
+    <label>Nama</label><br>
+    <input type="text"><br><br>
+
+    <label>Email</label><br>
+    <input type="email"><br><br>
+
+    <label>Tanggal Lahir</label><br>
+    <input type="date"><br><br>
+
+    <label>Kota Lahir</label><br>
+    <select>
+        <option>Jakarta</option>
+        <option>Palembang</option>
+    </select><br><br>
+
+    <label>Jenis Kelamin</label><br>
+    <input type="radio" name="jk"> Laki-laki
+    <input type="radio" name="jk"> Perempuan<br><br>
+
+    <label>Mengetahui MDP dari mana</label><br>
+    <input type="checkbox"> Keluarga
+    <input type="checkbox"> Sosial Media<br><br>
+
+    <label>Foto</label><br>
+    <input type="file"><br><br>
+
+    <button>Simpan</button>
+    <button type="reset">Reset</button>
+</form>
+
 </body>
 </html>
